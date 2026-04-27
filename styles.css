@@ -405,26 +405,40 @@ button:disabled {
 
 @media (max-width: 760px) {
   .choice-page {
-    padding: 28px 18px 56px;
+    padding: 30px 18px 54px;
   }
 
   .choice-content {
-    margin-top: 64px;
+    margin-top: 56px;
+  }
+
+  .choice-greeting {
+    margin-bottom: 16px;
   }
 
   .choice-content h1 {
-    font-size: 34px;
-    line-height: 40px;
+    max-width: 360px;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .choice-question {
-    font-size: 21px;
-    line-height: 30px;
+    max-width: 330px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .choice-thanks {
+    max-width: 300px;
+    margin: 30px auto 0;
+    font-size: 17px;
+    line-height: 26px;
   }
 
   .choice-grid {
-    gap: 16px;
-    margin-top: 42px;
+    width: min(356px, 100%);
+    gap: 14px;
+    margin: 38px auto 0;
   }
 
   .face {
@@ -499,23 +513,52 @@ button:disabled {
 }
 
 @media (max-width: 430px) {
+  .choice-page {
+    padding-inline: 20px;
+  }
+
+  .choice-header img {
+    width: 124px;
+    height: 38px;
+  }
+
   .choice-content {
-    margin-top: 48px;
+    margin-top: 46px;
+  }
+
+  .choice-greeting {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .choice-content h1 {
+    font-size: 31px;
+    line-height: 37px;
+  }
+
+  .choice-question {
+    margin-top: 14px;
+    font-size: 19px;
+    line-height: 28px;
   }
 
   .choice-grid {
     grid-template-columns: 1fr;
     gap: 12px;
+    margin-top: 36px;
   }
 
   .choice-card {
-    min-height: 112px;
-    grid-template-columns: 64px 1fr;
-    justify-items: start;
+    min-height: 118px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
     align-content: center;
-    gap: 18px;
-    padding: 16px 20px;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 22px;
     font-size: 22px;
+    text-align: center;
   }
 
   .face {
