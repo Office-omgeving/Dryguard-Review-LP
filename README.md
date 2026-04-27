@@ -5,8 +5,8 @@ Statische review-flow op basis van de Figma ontwerpen.
 ## Routes
 
 - `/` toont de keuze-pagina
-- `/We horen graag wat beter kan`
-- `/Het spijt ons dat het niet naar wens was`
+- `/we_horen_graag_wat_beter_kan`
+- `/het_spijt_ons_dat_het_niet_naar_wens_was`
 
 De keuze-pagina stuurt `Ja` naar Google Reviews en de twee andere keuzes naar de juiste landingspagina.
 

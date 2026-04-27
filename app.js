@@ -2,8 +2,8 @@ const googleReviewUrl = "https://g.page/r/CRQZCcpudNi1EB0/review";
 const reviewWebhookUrl = "https://hooks.zapier.com/hooks/catch/5723286/uv4jq25/";
 
 const paths = {
-  improve: "/We%20horen%20graag%20wat%20beter%20kan",
-  resolve: "/Het%20spijt%20ons%20dat%20het%20niet%20naar%20wens%20was",
+  improve: "/we_horen_graag_wat_beter_kan",
+  resolve: "/het_spijt_ons_dat_het_niet_naar_wens_was",
 };
 
 const variants = {
@@ -30,6 +30,7 @@ const variants = {
 function normalizedPath() {
   return decodeURIComponent(window.location.pathname)
     .replace(/^\/+|\/+$/g, "")
+    .replaceAll("_", " ")
     .toLowerCase();
 }
 
